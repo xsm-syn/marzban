@@ -194,8 +194,6 @@ if [ ! -d "/root/.acme.sh" ]; then
 fi
 
 systemctl daemon-reload
-systemctl stop haproxy
-systemctl stop nginx
 
 if [ ! -f "/root/.acme.sh/acme.sh" ]; then
     curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
