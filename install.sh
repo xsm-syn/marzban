@@ -250,6 +250,7 @@ sed -i "s/SUDO_PASSWORD = \"${passpanel}\"/# SUDO_PASSWORD = \"admin\"/" /opt/ma
 docker compose down && docker compose up -d
 cd
 echo "Tunggu 30 detik untuk generate token API"
+systemctl restart ufw
 sleep 30s
 
 #instal token
